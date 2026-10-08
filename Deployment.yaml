@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: rajeshnimmana/portfolio-springboot:latest
+          image: rajeshnimmana/portfolio-springboot:newlatest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
