@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: portfolio
+  name: portfolio-dev
+  namespace: dev
   labels:
     app: portfolio
 spec:
@@ -16,10 +17,10 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: rajeshnimmana/portfolio-springboot:newlatest
+          image: rajeshnimmana/portfolio-springboot:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
           resources:
             requests:
               cpu: "100m"
