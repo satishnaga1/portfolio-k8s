@@ -6,10 +6,10 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: 
+    - host: dev.example.com
       http:
         paths:
-          - path: /dev
+          - path: /
             pathType: Prefix
             backend:
               service:
