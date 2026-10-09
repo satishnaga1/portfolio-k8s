@@ -4,7 +4,7 @@ metadata:
   name: portfolio-service1
   namespace: dev
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: portfolio
   ports:
