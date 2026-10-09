@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: portfolio-ingress
+  name: portfolio-ingress1
 spec:
   ingressClassName: nginx
   rules:
@@ -11,6 +11,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: portfolio-service
+                name: portfolio-service1
                 port:
                   number: 8082
