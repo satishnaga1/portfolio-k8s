@@ -13,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: portfolio-service
+                name: portfolio-service1
                 port:
                   number: 8082
