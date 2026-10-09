@@ -5,12 +5,13 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - http: uat.example.com
+    - host: uat.example.com
+      http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: portfolio-service
+                name: portfolio-service1
                 port:
-                  number: 80
+                  number: 8082
